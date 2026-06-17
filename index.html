@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PhotoAgent — интерактивный перевод</title>
+    <title>PhotoAgent — интерактивный перевод статьи</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
 <div class="container" id="app">
 
-    <!-- ===== ЗАГОЛОВОК ===== -->
-    <header>
-        <h1>PhotoAgent: Autonomous Photo Editing<br />with Aesthetic Planning</h1>
-        <p class="subtitle">— интерактивный перевод · кликните по любому предложению —</p>
-        <div class="authors">
+    <!-- ===== ШАПКА СТАТЬИ ===== -->
+    <header class="article-header">
+        <div class="authors-line">
             <span class="affil">1</span>MMLab, CUHK &nbsp;·&nbsp;
             <span class="affil">2</span>Shanghai AI Lab &nbsp;·&nbsp;
             <span class="affil">3</span>USTC &nbsp;·&nbsp;
@@ -28,12 +26,12 @@
     <!-- ===== ПАНЕЛЬ УПРАВЛЕНИЯ ===== -->
     <div class="toolbar">
         <button class="toggle-all" id="toggleAllBtn">📖 Показать все переводы</button>
-        <span class="stats" id="stats">0 / 0 показано</span>
+        <span class="stats" id="stats">0 / 0</span>
     </div>
     <p class="click-hint">✣ нажмите на любое предложение, чтобы увидеть перевод</p>
 
-    <!-- ===== КОНТЕЙНЕР ДЛЯ ВСЕХ ПРЕДЛОЖЕНИЙ ===== -->
-    <div id="sentencesContainer"></div>
+    <!-- ===== КОНТЕЙНЕР ДЛЯ СОДЕРЖАНИЯ СТАТЬИ ===== -->
+    <div id="articleContent"></div>
 
     <!-- ===== ПОДВАЛ ===== -->
     <footer>
@@ -42,7 +40,6 @@
 
 </div>
 
-<!-- ===== ПОДКЛЮЧАЕМ JS ===== -->
 <script src="js/data.js"></script>
 <script src="js/app.js"></script>
 
