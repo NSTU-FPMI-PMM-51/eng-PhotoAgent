@@ -1,0 +1,216 @@
+/* ===== ГЛОБАЛЬНЫЕ СТИЛИ ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: #f7f5f0;
+    color: #1e1e1e;
+    line-height: 1.7;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 50px 60px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    border-radius: 12px;
+}
+
+/* ===== ЗАГОЛОВКИ ===== */
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 6px;
+    letter-spacing: -0.3px;
+    color: #0b1a2f;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #3a5a7a;
+    margin-bottom: 30px;
+    font-weight: 400;
+    border-bottom: 1px solid #e8e4dd;
+    padding-bottom: 20px;
+}
+
+.authors {
+    text-align: center;
+    font-size: 15px;
+    color: #4a5a6a;
+    margin-bottom: 35px;
+    background: #f0ede8;
+    padding: 12px 0;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0.3px;
+    line-height: 1.8;
+}
+
+.affil {
+    font-weight: 700;
+    color: #0b1a2f;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    color: #0b1a2f;
+    border-left: 5px solid #b8a088;
+    padding-left: 18px;
+}
+
+h3 {
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 28px;
+    margin-bottom: 12px;
+    color: #1e3a5a;
+}
+
+/* ===== БЛОКИ С ПРЕДЛОЖЕНИЯМИ ===== */
+.sentence-block {
+    display: block;
+    padding: 10px 14px;
+    margin: 4px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+    border-left: 3px solid transparent;
+    position: relative;
+}
+
+.sentence-block:hover {
+    background: #f2efe9;
+    border-left-color: #b8a088;
+}
+
+.sentence-block .en {
+    font-size: 17px;
+    color: #1a1a1a;
+}
+
+/* ===== РУССКИЙ ПЕРЕВОД (СКРЫТ) ===== */
+.sentence-block .ru {
+    display: none;
+    margin-top: 8px;
+    padding: 10px 14px;
+    background: #f3f0ea;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #1e3a5a;
+    border-left: 4px solid #8a7a6a;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    animation: fadeIn 0.25s ease;
+}
+
+.sentence-block.active .ru {
+    display: block;
+}
+
+.sentence-block.active {
+    background: #f6f1ea;
+    border-left-color: #7a6a5a;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* ===== АНИМАЦИЯ ===== */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-4px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== ПАНЕЛЬ УПРАВЛЕНИЯ ===== */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+.toggle-all {
+    display: inline-block;
+    background: #d6cec4;
+    border: none;
+    padding: 8px 22px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1e1e1e;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.toggle-all:hover {
+    background: #bfb4a8;
+}
+
+.stats {
+    font-size: 14px;
+    color: #6a5a4a;
+    font-family: 'Courier New', monospace;
+}
+
+.click-hint {
+    font-size: 13px;
+    color: #9a8a7a;
+    text-align: right;
+    margin-bottom: 20px;
+    font-style: italic;
+    border-bottom: 1px solid #e8e4dd;
+    padding-bottom: 10px;
+}
+
+/* ===== СТРАНИЦЫ ===== */
+.page-marker {
+    font-size: 13px;
+    color: #8a7a6a;
+    text-align: center;
+    margin: 30px 0 10px 0;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 1px;
+    border-top: 1px dashed #d6cec4;
+    padding-top: 20px;
+}
+
+/* ===== АДАПТИВ ===== */
+@media (max-width: 700px) {
+    .container {
+        padding: 20px 18px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .sentence-block .en {
+        font-size: 15px;
+    }
+    .sentence-block .ru {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    .authors {
+        font-size: 13px;
+        padding: 10px 0;
+    }
+    .toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .toggle-all {
+        text-align: center;
+    }
+}
