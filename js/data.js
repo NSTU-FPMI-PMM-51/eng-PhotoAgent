@@ -1,13 +1,13 @@
 // ============================================================
-//  DATA.JS — вся статья с переводами
-//  Структура:
-//    type: 'paragraph' | 'heading' | 'list'
-//    sentences: [ { en: "...", ru: "..." }, ... ]
+//  DATA.JS — ПОЛНАЯ СТАТЬЯ (страницы 1-3)
+//  ВСЕ ПРЕДЛОЖЕНИЯ БЕЗ ИСКЛЮЧЕНИЙ
 // ============================================================
 
 const ARTICLE_DATA = {
 	sections: [
-		// ========== ABSTRACT ==========
+		// ============================================================
+		//  ABSTRACT (страница 1) — 9 предложений
+		// ============================================================
 		{
 			type: 'heading',
 			level: 2,
@@ -55,7 +55,9 @@ const ARTICLE_DATA = {
 			],
 		},
 
-		// ========== 1. INTRODUCTION ==========
+		// ============================================================
+		//  1. INTRODUCTION (страница 1) — 18 предложений
+		// ============================================================
 		{
 			type: 'heading',
 			level: 2,
@@ -155,7 +157,9 @@ const ARTICLE_DATA = {
 			],
 		},
 
-		// ========== PAGE 2: SYSTEM COMPONENTS ==========
+		// ============================================================
+		//  PAGE 2 — SYSTEM COMPONENTS (страница 2) — 7 предложений
+		// ============================================================
 		{
 			type: 'heading',
 			level: 2,
@@ -220,7 +224,9 @@ const ARTICLE_DATA = {
 			],
 		},
 
-		// ========== PAGE 3: CONTRIBUTIONS + RELATED WORK ==========
+		// ============================================================
+		//  PAGE 3 — CONTRIBUTIONS (страница 3) — 1 предложение + список из 4
+		// ============================================================
 		{
 			type: 'heading',
 			level: 2,
@@ -247,8 +253,12 @@ const ARTICLE_DATA = {
 					ru: 'Мы представляем визуально-эстетический планировщик для исследования последовательностей действий по редактированию на длительных горизонтах, обеспечивая целенаправленное, управляемое целью редактирование изображений.',
 				},
 				{
-					en: 'We present the UGC-Edit dataset and introduce a reward model to support aesthetic research in autonomous image editing. We also introduce a test set of real photographs for evaluating autonomous photo editing.',
-					ru: 'Мы представляем набор данных UGC-Edit и внедряем модель вознаграждения для поддержки исследований в области эстетики автономного редактирования изображений. Мы также представляем тестовый набор реальных фотографий для оценки автономного редактирования фотографий.',
+					en: 'We present the UGC-Edit dataset and introduce a reward model to support aesthetic research in autonomous image editing.',
+					ru: 'Мы представляем набор данных UGC-Edit и внедряем модель вознаграждения для поддержки исследований в области эстетики автономного редактирования изображений.',
+				},
+				{
+					en: 'We also introduce a test set of real photographs for evaluating autonomous photo editing.',
+					ru: 'Мы также представляем тестовый набор реальных фотографий для оценки автономного редактирования фотографий.',
 				},
 				{
 					en: 'Extensive experiments demonstrate that our complete system achieves significant improvements in editing quality.',
@@ -257,7 +267,9 @@ const ARTICLE_DATA = {
 			],
 		},
 
-		// ---- 2. RELATED WORK ----
+		// ============================================================
+		//  2. RELATED WORK — Image Editing (страница 3) — 13 предложений
+		// ============================================================
 		{
 			type: 'heading',
 			level: 3,
@@ -327,7 +339,9 @@ const ARTICLE_DATA = {
 			],
 		},
 
-		// ---- Planning with Autonomous Agents ----
+		// ============================================================
+		//  2. RELATED WORK — Planning with Autonomous Agents (страница 3) — 11 предложений
+		// ============================================================
 		{
 			type: 'heading',
 			level: 3,
@@ -393,7 +407,9 @@ const ARTICLE_DATA = {
 			],
 		},
 
-		// ---- Image Evaluation ----
+		// ============================================================
+		//  2. RELATED WORK — Image Evaluation (страница 3) — 8 предложений
+		// ============================================================
 		{
 			type: 'heading',
 			level: 3,
