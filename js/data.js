@@ -18,15 +18,15 @@ const ARTICLE_DATA = {
 			sentences: [
 				{
 					en: 'With the recent fast development of generative models, instruction-based image editing has shown great potential in generating high-quality images.',
-					ru: 'В связи с недавним быстрым развитием генеративных моделей редактирование изображений на основе текстовых инструкций продемонстрировало высокий потенциал для генерации высококачественных изображений.',
+					ru: 'В связи с недавним стремительным развитием генеративных моделей редактирование изображений на основе текстовых инструкций продемонстрировало высокий потенциал для генерации высококачественных изображений.',
 				},
 				{
 					en: 'However, the quality of editing highly depends on carefully designed instructions, placing the burden of task decomposition and sequencing entirely on the user.',
-					ru: 'Однако качество редактирования сильно зависит от детально проработанных инструкций, что полностью возлагает задачу декомпозиции и планирования последовательности шагов на пользователя.',
+					ru: 'Однако качество редактирования сильно зависит от тщательно проработанных инструкций, что полностью возлагает задачу декомпозиции и планирования последовательности действий на пользователя.',
 				},
 				{
 					en: 'To achieve autonomous image editing, we present PhotoAgent, a system that advances image editing through explicit aesthetic planning.',
-					ru: 'Для реализации автономного редактирования изображений мы представляем PhotoAgent — систему, совершенствующую редактирование изображений за счет явного эстетического планирования.',
+					ru: 'Для реализации автономного редактирования изображений мы разработали PhotoAgent — систему, совершенствующую редактирование изображений за счет явного эстетического планирования.',
 				},
 				{
 					en: 'Specifically, PhotoAgent formulates autonomous image editing as a long-horizon decision-making problem.',
@@ -34,19 +34,19 @@ const ARTICLE_DATA = {
 				},
 				{
 					en: 'It reasons over user aesthetic intent, plans multi-step editing actions via tree search, and iteratively refines results through closed-loop execution with memory and visual feedback, without requiring step-by-step user prompts.',
-					ru: 'Он анализирует эстетический замысел пользователя, планирует многошаговые операции редактирования с помощью поиска по дереву и итеративно улучшает результаты в рамках замкнутого контура управления с поддержкой памяти и визуальной обратной связи, не требуя пошаговых подсказок от пользователя.',
+					ru: 'Он анализирует эстетический замысел пользователя, планирует многошаговые действия по редактированию с помощью поиска по дереву и итеративно улучшает результаты посредством выполнения в замкнутом контуре с использованием памяти и визуальной обратной связи, не требуя пошаговых подсказок от пользователя.',
 				},
 				{
 					en: 'To support reliable evaluation in real-world scenarios, we introduce UGC-Edit, an aesthetic evaluation benchmark consisting of 7,000 photos and a learned aesthetic reward model.',
-					ru: 'Для обеспечения надежной оценки в реальных сценариях мы вводим UGC-Edit — бенчмарк для эстетической оценки, состоящий из 7000 фотографий и обученной модели эстетического вознаграждения (aesthetic reward model).',
+					ru: 'Для обеспечения надежной оценки в реальных сценариях мы представили UGC-Edit — бенчмарк для эстетической оценки, состоящий из 7000 фотографий и обученной модели эстетического вознаграждения.',
 				},
 				{
 					en: 'We also construct a test set containing 1,017 photos to systematically assess autonomous photo editing performance.',
-					ru: 'Мы также формируем тестовую выборку из 1017 фотографий для систематической оценки эффективности автономного редактирования.',
+					ru: 'Мы также сформировали тестовую выборку из 1017 фотографий для систематической оценки эффективности автономного редактирования фотографий.',
 				},
 				{
 					en: 'Extensive experiments demonstrate that PhotoAgent consistently improves both instruction adherence and visual quality compared with baseline methods.',
-					ru: 'Обширные эксперименты демонстрируют, что PhotoAgent последовательно улучшает как точность следования инструкциям, так и визуальное качество по сравнению с базовыми методами.',
+					ru: 'Обширные эксперименты демонстрируют, что PhotoAgent последовательно повышает как точность следования инструкциям, так и визуальное качество по сравнению с базовыми методами.',
 				},
 				{
 					en: 'The project page is https://mdyao.github.io/PhotoAgent.',
@@ -72,7 +72,7 @@ const ARTICLE_DATA = {
 				},
 				{
 					en: "This shift broadens the scope of computational photography, moving beyond fidelity to the captured scene toward fidelity to the user's aesthetic intent, thereby democratizing powerful photographic expression [24, 40].",
-					ru: 'Этот сдвиг расширяет границы вычислительной фотографии, переходя от точности воспроизведения запечатленной сцены к точности соответствия эстетическому замыслу пользователя, тем самым делая мощные средства фотографического самовыражения общедоступными.',
+					ru: 'Этот сдвиг расширяет границы вычислительной фотографии, переходя от точности воспроизведения запечатленной сцены к точности соответствия эстетическому замыслу пользователя, тем самым делая мощные средства художественного самовыражения доступными для каждого.',
 				},
 			],
 		},
@@ -81,7 +81,7 @@ const ARTICLE_DATA = {
 			sentences: [
 				{
 					en: 'Despite these advances, a critical bottleneck remains: these powerful models fundamentally rely on continuous user involvement, as shown in Fig. 1.',
-					ru: 'Несмотря на эти успехи, сохраняется критическое «узкое место»: данные мощные модели принципиально требуют непрерывного участия пользователя, как показано на Рисунке 1.',
+					ru: 'Несмотря на эти успехи, сохраняется критическое узкое место: данные мощные модели принципиально требуют непрерывного участия пользователя, как показано на рисунке 1.',
 				},
 				{
 					en: "Their effectiveness largely depends on the user's ability to design precise and sequential instructions, which is difficult for amateur users.",
@@ -132,11 +132,11 @@ const ARTICLE_DATA = {
 			sentences: [
 				{
 					en: 'In this paper, we introduce PhotoAgent, a novel autonomous system that integrates large vision and multimodal models (LVMs) with a suite of editing tools into a coherent framework, enabling fully automated, high-quality photo editing.',
-					ru: 'В данной работе мы представляем PhotoAgent — новую автономную систему, которая интегрирует большие визуальные и мультимодальные модели с набором инструментов редактирования в единую программную среду, обеспечивая полностью автоматизированное и высококачественное редактирование фотографий.',
+					ru: 'В данной работе мы представили PhotoAgent — новую автономную систему, которая интегрирует большие визуальные и мультимодальные модели (LVM) с набором инструментов редактирования в единую программную среду, обеспечивая полностью автоматизированное и высококачественное редактирование фотографий.',
 				},
 				{
 					en: 'As illustrated in Fig. 1, PhotoAgent introduces exploratory visual aesthetic planning within a closed-loop framework.',
-					ru: 'Как показано на Рисунке 1, PhotoAgent реализует исследовательское визуально-эстетическое планирование в рамках замкнутого контура управления.',
+					ru: 'Как показано на рисунке 1, PhotoAgent реализует исследовательское визуально-эстетическое планирование в рамках замкнутого контура управления.',
 				},
 				{
 					en: 'Unlike open-loop systems (e.g., GenArtist [42]) that execute linear action sequences without feedback, PhotoAgent continuously evaluates its edits and strategically explores the editing space.',
@@ -170,7 +170,7 @@ const ARTICLE_DATA = {
 			sentences: [
 				{
 					en: 'To achieve this, PhotoAgent consists of four core components: a perceiver, a planner, an executor, and an evaluator.',
-					ru: 'Для реализации этого подхода PhotoAgent включает в себя четыре ключевых компонента: блок восприятия (perceiver), планировщик (planner), исполнитель (executor) и блок оценки (evaluator).',
+					ru: 'Для реализации этого подхода PhotoAgent состоит из четырех ключевых компонентов: блока восприятия (perceiver), планировщика (planner), исполнителя (executor) и блока оценки (evaluator).',
 				},
 				{
 					en: 'The process begins with a VLM-based perceiver (e.g., Qwen3-VL [2]) that interprets the input image and produces a set of semantically meaningful editing actions.',
@@ -211,15 +211,15 @@ const ARTICLE_DATA = {
 				},
 				{
 					en: 'To address this, we introduce UGC-Edit, a dataset of 7,000 real user photos annotated with human aesthetic scores.',
-					ru: 'Для решения этой проблемы мы представляем UGC-Edit — датасет из 7000 реальных пользовательских фотографий, снабженных оценками эстетической привлекательности, выставленными людьми.',
+					ru: 'Для решения этой проблемы мы представили UGC-Edit — датасет из 7000 реальных пользовательских фотографий, снабженных оценками эстетической привлекательности, выставленными людьми.',
 				},
 				{
 					en: 'We also train a reward model on UGC-Edit, enabling reliable evaluation of aesthetic quality for multi-step image editing.',
-					ru: 'Мы также обучаем модель вознаграждения (reward model) на UGC-Edit, что обеспечивает надежную оценку эстетического качества в процессе многошагового редактирования изображений.',
+					ru: 'Мы также обучили модель вознаграждения (reward model) на UGC-Edit, что обеспечивает надежную оценку эстетического качества в процессе многошагового редактирования изображений.',
 				},
 				{
 					en: 'Finally, to comprehensively evaluate the editing, we construct a test set of real photographs consisting of 1,017 images, on which our system achieves state-of-the-art results across quantitative metrics, qualitative assessment, and user studies.',
-					ru: 'Наконец, для всестороннего тестирования мы формируем тестовую выборку из 1017 реальных фотографий, на которой наша система демонстрирует превосходные результаты (state-of-the-art) по количественным метрикам, качественной оценке и экспертным тестам с участием пользователей.',
+					ru: 'Наконец, для всестороннего тестирования мы сформировали тестовую выборку из 1017 реальных фотографий, на которой наша система демонстрирует превосходные результаты (state-of-the-art) по количественным метрикам, качественной оценке и экспертным тестам с участием пользователей.',
 				},
 			],
 		},
@@ -246,15 +246,15 @@ const ARTICLE_DATA = {
 			items: [
 				{
 					en: 'We propose PhotoAgent, an autonomous editing system that integrates a closed-loop architecture with a suite of editing and evaluation tools, enabling robust multi-step editing.',
-					ru: 'Мы предлагаем PhotoAgent — автономную систему редактирования, которая сочетает в себе замкнутую архитектуру с набором инструментов редактирования и оценки, обеспечивая надежное многошаговое редактирование.',
+					ru: 'Мы предложили PhotoAgent — автономную систему редактирования, которая сочетает в себе замкнутую архитектуру с набором инструментов редактирования и оценки, обеспечивая надежное многошаговое редактирование.',
 				},
 				{
 					en: 'We introduce a visual aesthetic planner to explore sequences of editing actions over long horizons, enabling deliberate, goal-driven image editing.',
-					ru: 'Мы представляем визуально-эстетический планировщик для исследования последовательностей действий по редактированию на глубоких горизонтах планирования, обеспечивающий целенаправленное и содержательное редактирование изображений.',
+					ru: 'Мы разработали визуально-эстетический планировщик для исследования последовательностей действий по редактированию на глубоких горизонтах планирования, обеспечивающий целенаправленное и содержательное редактирование изображений.',
 				},
 				{
 					en: 'We present the UGC-Edit dataset and introduce a reward model to support aesthetic research in autonomous image editing. We also introduce a test set of real photographs for evaluating autonomous photo editing.',
-					ru: 'Мы представляем датасет UGC-Edit и обучаем на нем модель вознаграждения для поддержки исследований эстетики в области автономного редактирования изображений, а также предлагаем тестовую выборку реальных фотографий для оценки качества автономного редактирования.',
+					ru: 'Мы представили датасет UGC-Edit и обучили модель вознаграждения для поддержки исследований эстетики в области автономного редактирования изображений, а также предложили тестовую выборку реальных фотографий для оценки качества автономного редактирования.',
 				},
 				{
 					en: 'Extensive experiments demonstrate that our complete system achieves significant improvements in editing quality.',
@@ -394,7 +394,7 @@ const ARTICLE_DATA = {
 				},
 				{
 					en: 'We also employ a learned reward model trained on user preferences to guide the search.',
-					ru: 'Для направления поиска мы задействуем модель вознаграждения, обученную на основе предпочтений реальных пользователей.',
+					ru: 'Для направления поиска мы задействовали модель вознаграждения, обученную на основе предпочтений реальных пользователей.',
 				},
 				{
 					en: 'This combination enables robust planning with a diverse toolset and is supported by a new editing-specific benchmark for evaluation.',
@@ -445,7 +445,7 @@ const ARTICLE_DATA = {
 				},
 				{
 					en: 'To address this limitation, we introduce a specialized UGC evaluation dataset and train a reward model on the dataset.',
-					ru: 'Для преодоления этого ограничения мы вводим специализированный датасет для оценки пользовательского контента и обучаем на нем собственную модель вознаграждения.',
+					ru: 'Для преодоления этого ограничения мы ввели специализированный датасет для оценки пользовательского контента и обучили на нем собственную модель вознаграждения.',
 				},
 				{
 					en: 'The reward model is adopted from a pretrained vision-language model (VLM) that contains inherent knowledge.',
